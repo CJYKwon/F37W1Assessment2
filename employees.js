@@ -20,6 +20,20 @@
 */
 
 //CODE HERE
+class Employee {
+    constructor(name, shift){
+        this.name = name
+        this.shift = shift
+    }
+    getSchedule(){
+        console.log(this.name, `works on`, this.shift)
+    }
+    }
+
+// let Employee1 = new Employee (`Chris`, `Day Shift`)
+
+// Employee1.getSchedule()
+
 
 
 
@@ -34,6 +48,8 @@
 */
 
 //CODE HERE
+const empOne = new Employee (`Jess`, `weekend mornings, ` + `weekend afternoons`)
+
 
 /*
     Call the `getSchedule` method on the
@@ -41,7 +57,7 @@
 */
 
 //CODE HERE
-
+empOne.getSchedule()
 
 /*
     Make a copy of the empOne object
@@ -56,8 +72,9 @@
 */
 
 //CODE HERE
+const empTwo = {...empOne, name: `Nick`}
 
-
+console.log(empTwo)
 
 //////////////////PROBLEM 2////////////////////
 /*  

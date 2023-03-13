@@ -200,8 +200,7 @@ console.log(filteredFood)
 */
 
 //CODE HERE
-
-
+const filterByProperty = foodArr.filter((element) => element)
 
 /*
     Invoke the `filterByProperty` function passing
