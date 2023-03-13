@@ -100,6 +100,12 @@ console.log(empTwo)
 */
 
 //CODE HERE
+class Manager extends Employee{
+    constructor(name, shift, employees){
+        super(name, shift)
+        this.employees = employees
+    }
+}
 
 
 
