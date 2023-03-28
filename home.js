@@ -52,6 +52,7 @@ greetUser(`Chris`)
 
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
+
 //CODE HERE
 
 // function valueFromPath(obj, path) {
@@ -76,6 +77,14 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 // console.log(canWeDeliver)
 
+function canWeDeliver(zipCode){
+    if (deliveryAreaZipCodes.includes(zipCode)) {
+        return "You're in our delivery zone!"
+    }else {
+        return "Sorry, we can't deliver to that address"
+    }
+}
+
 // /* 
 //     Problem 2 Continued
 
@@ -94,6 +103,13 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 // */
 
 // CODE HERE
+function canWeDeliverTwo(zipcode){
+    for (let i = 0; i < deliveryAreaZipCodes.length; i++){
+        if(deliveryAreaZipCodes[i === zipcode]){
+            return "You're in our delivery zone!"
+        }
+    }return "Sorry, we can't deliver to that address"
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -130,7 +146,7 @@ const deals = [
 */
 
 //CODE HERE
-
+deals[0].title = deals[0].title.replace('15','10')
 
 
 
@@ -149,3 +165,7 @@ const deals = [
 */
 
 //CODE HERE
+
+deals[1].desc = deals[1].desc.replace('March', 'April').trim()
+
+console.log(deals)

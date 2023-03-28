@@ -54,7 +54,19 @@ console.log(summedPrice)
 */
 
 //CODE HERE
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    const taxAmount = cartTotal * tax;
+    const totalCoupon = cartTotal - couponValue;
+    const totalPrice = totalCoupon + taxAmount;
+    return totalPrice
+}
 
+cartTotal = 33.33;
+const couponValue = 5
+const tax = 0.06
+
+const totalPrice = calcFinalPrice(cartTotal, couponValue, tax);
+console.log(totalPrice)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -79,7 +91,10 @@ console.log(summedPrice)
 
 /*
     TEXT ANSWER HERE
-
+I would set the follow properties to the customer object: Name, E-mail, Order ID number and Phone Number. 
+The name so we can identify who has made the order.
+E-mail/Phone Number to contact the customer if needed. This data could also be used to narrow down an order out of many.
+Order ID Number to pin point the order and verify what products have been sold.
 */
 
 /*
@@ -88,3 +103,9 @@ console.log(summedPrice)
 */
 
 //CODE HERE
+const customer = {
+    name: 'Chris Kwon',
+    email: 'CJYKwon@gmail.com',
+    phone: '734-619-9521',
+    orderId: 1
+}
